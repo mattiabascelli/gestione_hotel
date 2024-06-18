@@ -1,0 +1,32 @@
+CREATE DATABASE gestione_hotel;
+USE gestione_hotel;
+CREATE TABLE camere(
+id_camere INT AUTO_INCREMENT PRIMARY KEY,
+prezzo DECIMAL(10,2),
+servizi VARCHAR(150)
+);
+
+CREATE TABLE account(
+id_account INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+password VARCHAR(50),
+nome VARCHAR(50),
+cognome VARCHAR(50),
+email VARCHAR(50)
+);
+
+CREATE TABLE recensione(
+id_recensione INT AUTO_INCREMENT PRIMARY KEY,
+periodo VARCHAR(100),
+recensione TEXT,
+id_account INT
+);
+
+CREATE TABLE prenotazioni(
+id_prenotazione INT AUTO_INCREMENT PRIMARY KEY,
+check_in DATE NOT NULL,
+check_out DATE NOT NULL,
+n_persone INT,
+id_camera INT,
+id_account INT
+);
