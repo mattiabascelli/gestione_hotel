@@ -13,3 +13,4 @@ https://mattiabascelli.github.io/gestione_hotel/
 
 Il programma inoltre permette la generazione di un PDF della prenotazione dopo averla effettuata correttamente, in questo caso abbiamo utilizzato la libreria pdfbox-app-2.0.30.
 
+Si consiglia di aprire l'eseguibile del programma con il prompt dei comandi una volta creato, per permettervi una chiusura più comoda.
