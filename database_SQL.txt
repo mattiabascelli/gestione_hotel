@@ -1,7 +1,10 @@
 CREATE DATABASE gestione_hotel;
+
 USE gestione_hotel;
+
 CREATE TABLE camere(
 id_camere INT AUTO_INCREMENT PRIMARY KEY,
+nome_camera VARCHAR(50),
 prezzo DECIMAL(10,2),
 servizi VARCHAR(150)
 );
